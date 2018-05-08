@@ -1,19 +1,34 @@
+
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  max-width: 1024px;
+  max-width: 960px;
+  background-image: url(../img/topbackground.png);
+  background-position: top right center;
+  background-repeat: no-repeat;
+  background-size: 1600px 625px;
   margin: 0 auto;
 }
 
+@font-face {
+  font-family: 'neon_tubes_2regular';
+  src: url('neontubes2-webfont.woff2') format('woff2'), url('neontubes2-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 header {
-  background-image: url(../img/topbackground.png);
-  height: 650px;
-  background-size: cover;
+  height: 800px;
+  background-image: url(../img/jukebox@2x.png);
+  background-position: top right;
   background-repeat: no-repeat;
+  background-size: 600px 550px;
   color: #FFF;
 }
 
 nav {
   padding-top: 10px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 30px 30px 0 30px;
@@ -29,22 +44,59 @@ nav {
 }
 
 .nav-border {
-  width: 80px;
-  height: 18px;
-  border-radius: 20px;
+  width: 74px;
+  padding: 10px;
+  border-radius: 10px;
   box-shadow: 0 4px 10px 0 rgba(234, 76, 137, 0.25);
   border: solid 2px #ea4c89;
 }
 
-.jukebox {
-  float: right;
-  margin-top: -30vh;
-}
-
 #header-headline {
   font-family: 'neon_tubes_2regular';
-  font-size: 36px;
-  letter-spacing: 0.2px;
+  font-size: 42px;
+  letter-spacing: 1px;
+  line-height: 56px;
+  margin-top: 8vw;
+  margin-left: 30px;
+  font-weight: 100;
+  width: 35vw;
   text-align: left;
+  animation: flicker 1.5s infinite alternate;
   color: #FFF;
+}
+
+/* Animate neon flicker */
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 .5rem #FFF;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.headline-button {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 60px;
+  border: 2px solid #EA4C89;
+  width: 240px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 0 rgba(234, 76, 137, 0.25);
+}
+
+.pink-app-icon {
+  height: 50px;
+  padding-right: 10px;
+}
+
+.headline-button h4, h2 {
+  margin: 0;
+}
+
+.headline-button h4 {
+  margin-top: 2px;
 }
