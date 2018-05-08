@@ -56,7 +56,7 @@ nav {
   font-size: 42px;
   letter-spacing: 1px;
   line-height: 56px;
-  margin-top: 8vw;
+  margin-top: 10vw;
   margin-left: 30px;
   font-weight: 100;
   width: 35vw;
@@ -80,7 +80,7 @@ nav {
 .headline-button {
   display: flex;
   margin-left: 30px;
-  margin-top: 60px;
+  margin-top: 50px;
   border: 2px solid #EA4C89;
   width: 240px;
   padding: 10px;
