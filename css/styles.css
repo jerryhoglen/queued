@@ -1,0 +1,49 @@
+body {
+  font-family: SFProText, sans-serif;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(/img/topbackground.png);
+  height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+}
+
+nav {
+  padding-top: 10px;
+}
+
+.navbar {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.right-half {
+  float: right;
+}
+
+.nav-right {
+  list-style-type: none;
+  display: inline-flex;
+  padding-left: 450px;
+}
+
+.nav-right li {
+  padding: 15px;
+}
+
+.nav-border {
+  width: 80px;
+  height: 18px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px 0 rgba(234, 76, 137, 0.25);
+  border: solid 2px #ea4c89;
+}
+
+.jukebox {
+  float: right;
+  margin-top: -30vh;
+}
