@@ -107,15 +107,15 @@ nav {
 }
 
 .featured-icons-section {
-  max-width: 960px;
+  max-width: 800px;
   margin: 0 auto;
   color: #B4BCC4;
-  padding-top: 10vw;
+  padding-top: 12vw;
 }
 
 .featured-icons-section h1 {
   font-size: 3em;
-  padding: 0 0 20px 30px;
+  padding: 0 0 10px 40px;
 }
 
 .featured-icons-section ul {
@@ -126,12 +126,12 @@ nav {
 
 .featured-icons {
   height: 80px;
-  padding-bottom: 8vw;
+  padding-bottom: 10vw;
 }
 
 .artboards-mockup {
-  width: 80vw;
-  padding: 0 10vw 8vw 10vw;
+  width: 90vw;
+  padding: 0 5vw 8vw 5vw;
   max-width: 1440px;
 }
 
@@ -139,7 +139,13 @@ nav {
   height: 600px;
 }
 
+.classic-screen-size {
+  height: 800px;
+}
+
 .engaged-mode-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 800px;
   background-image: url(../img/topleftoval@3x.png);
   background-size: 775px 500px;
@@ -147,7 +153,39 @@ nav {
   background-repeat: no-repeat;
 }
 
+.h2-color {
+  margin: 0;
+  font-size: 2.5em;
+  color: #8E65E3;
+}
+
+.h4-color {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.3em;
+  color: #B9C8DD;
+}
+
+.p-color {
+  margin: 0;
+  font-size: 1.2em;
+  color: #205284;
+}
+
+.left-engaged {
+  margin: auto 0;
+  padding-left: 15vw;
+}
+
+.right-engaged {
+  margin: auto 0;
+  width: 30vw;
+  padding-left: 5vw;
+}
+
 .classic-mode-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 800px;
   background-image: url(../img/middleoval@3x.png);
   background-size:725px 475px;
@@ -155,10 +193,40 @@ nav {
   background-repeat: no-repeat;
 }
 
+.right-classic {
+  grid-column: 2;
+  margin: auto 0;
+  padding-top: 5vw;
+  padding-left: 5vw;
+}
+
+.left-classic {
+  grid-column: 1;
+  grid-row: 1;
+  margin: auto 0;
+  width: 30vw;
+  margin-top: 250px;
+  padding-left: 15vw;
+}
+
 .account-settings-section {
+  margin-top: -50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 800px;
   background-image: url(../img/bottomleftoval@3x.png);
   background-size: 725px 525px;
   background-position: left;
   background-repeat: no-repeat;
+}
+
+.left-account {
+  margin: auto 0;
+  padding-left: 15vw;
+}
+
+.right-account {
+  margin: auto 0;
+  width: 30vw;
+  padding-left: 5vw;
 }
