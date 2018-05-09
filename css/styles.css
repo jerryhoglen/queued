@@ -89,6 +89,7 @@ nav {
   border: 2px solid #EA4C89;
   width: 240px;
   padding: 10px;
+  color: #8E65E3;
   border-radius: 10px;
   box-shadow: 0 4px 10px 0 rgba(234, 76, 137, 0.25);
 }
@@ -229,4 +230,86 @@ nav {
   margin: auto 0;
   width: 30vw;
   padding-left: 5vw;
+}
+
+footer {
+  height: 800px;
+  background-image: url(../img/bottombackground@3x.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 2600px 800px;
+  margin: 0 auto;
+}
+
+footer h1 {
+  font-size: 3em;
+  color: #FFF;
+  text-align: center;
+}
+
+footer p {
+  color: #B4BCC4;
+  font-size: 1.5em;
+  width: 60vw;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.main-logo {
+  display: block;
+  width: 30%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.footer-button {
+  display: flex;
+  border: 2px solid #EA4C89;
+  width: 240px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 0 rgba(234, 76, 137, 0.25);
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.pink-app-icon {
+  height: 50px;
+  padding-right: 10px;
+}
+
+.footer-button h4, h2 {
+  margin: 0;
+  color: #8E65E3;
+}
+
+.footer-button h4 {
+  margin-top: 2px;
+}
+
+.actual-footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 5vh;
+}
+
+.actual-footer h4 {
+  color: #FFF;
+  font-size: 1.3em;
+}
+
+.footer-icons ul {
+  display: flex;
+  float: right;
+  list-style-type: none;
+}
+
+.footer-icons img {
+  height: 50px;
+}
+
+.footer-icons li {
+  margin: 0 20px;
 }
