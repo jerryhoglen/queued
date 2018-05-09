@@ -138,3 +138,27 @@ nav {
 .mockup-screen-size {
   height: 600px;
 }
+
+.engaged-mode-section {
+  height: 800px;
+  background-image: url(../img/topleftoval@3x.png);
+  background-size: 775px 500px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.classic-mode-section {
+  height: 800px;
+  background-image: url(../img/middleoval@3x.png);
+  background-size:725px 475px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.account-settings-section {
+  height: 800px;
+  background-image: url(../img/bottomleftoval@3x.png);
+  background-size: 725px 525px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
