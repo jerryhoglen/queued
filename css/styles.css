@@ -4,7 +4,7 @@ body {
   background-image: url(../img/topbackground.png);
   background-position: top right center;
   background-repeat: no-repeat;
-  background-size: 1600px 725px;
+  background-size: 2600px 800px;
   margin: 0 auto;
 }
 
@@ -110,7 +110,7 @@ nav {
   max-width: 960px;
   margin: 0 auto;
   color: #B4BCC4;
-  padding-top: 8vw;
+  padding-top: 10vw;
 }
 
 .featured-icons-section h1 {
@@ -130,5 +130,11 @@ nav {
 }
 
 .artboards-mockup {
+  width: 80vw;
+  padding: 0 10vw 8vw 10vw;
   max-width: 1440px;
+}
+
+.mockup-screen-size {
+  height: 600px;
 }
