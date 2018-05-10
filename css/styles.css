@@ -151,7 +151,7 @@ nav {
   grid-template-columns: 1fr 1fr;
   height: 800px;
   background-image: url(../img/topleftoval@3x.png);
-  background-size: 775px 500px;
+  background-size: 750px 500px;
   background-position: left;
   background-repeat: no-repeat;
 }
@@ -183,6 +183,7 @@ nav {
 .right-engaged {
   margin: auto 0;
   width: 30vw;
+  max-width: 450px;
   padding-left: 5vw;
 }
 
@@ -208,6 +209,7 @@ nav {
   grid-row: 1;
   margin: auto 0;
   width: 30vw;
+  max-width: 450px;
   margin-top: 250px;
   padding-left: 15vw;
 }
@@ -231,6 +233,7 @@ nav {
 .right-account {
   margin: auto 0;
   width: 30vw;
+  max-width: 450px;
   padding-left: 5vw;
 }
 
@@ -253,8 +256,9 @@ footer p {
   color: #B4BCC4;
   font-size: 1.5em;
   width: 60vw;
+  max-width: 800px;
   margin: auto;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .main-logo {
