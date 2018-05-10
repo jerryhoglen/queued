@@ -131,8 +131,10 @@ nav {
 }
 
 .artboards-mockup {
-  width: 90vw;
-  padding: 0 5vw 8vw 5vw;
+  display: block;
+  margin: auto;
+  width: 80vw;
+  padding: 0 0 8vw 0;
   max-width: 1300px;
 }
 
