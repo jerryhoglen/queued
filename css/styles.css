@@ -373,8 +373,10 @@ footer p {
   }
   .nav-border {
     width: 74px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(234, 76, 137, 0.25);
+    border: solid 2px #ea4c89;
   }
   .headline-container {
     max-width: 960px;
