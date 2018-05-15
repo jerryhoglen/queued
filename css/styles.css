@@ -406,19 +406,24 @@ footer p {
   .headline-button {
     display: flex;
     margin-top: 50px;
-    width: 240px;
+    width: 260px;
     padding: 10px;
     border-radius: 10px;
   }
   .pink-app-icon {
     height: 50px;
     padding-right: 10px;
+    padding-top: 3px;
   }
   .headline-button h4, h2 {
     margin: 0;
   }
+  .headline-button h2 {
+    font-size: 1.75em;
+  }
   .headline-button h4 {
     margin-top: 2px;
+    font-size: 1.2em;
   }
   .featured-icons-section {
     max-width: 800px;
@@ -553,7 +558,7 @@ footer p {
   }
   .footer-button {
     display: flex;
-    width: 240px;
+    width: 260px;
     padding: 10px;
     border-radius: 10px;
     margin: 0 auto;
@@ -562,12 +567,17 @@ footer p {
   .pink-app-icon {
     height: 50px;
     padding-right: 10px;
+    padding-top: 2px;
   }
   .footer-button h4, h2 {
     margin: 0;
   }
+  .footer-button h2 {
+    font-size: 1.75em;
+  }
   .footer-button h4 {
     margin-top: 2px;
+    font-size: 1.2em;
   }
   .actual-footer {
     display: flex;

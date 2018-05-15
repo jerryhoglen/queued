@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,9 +17,9 @@
     <nav>
       <img src="img/logo.png" srcset="img/logo@2x.png 2x, img/logo@3x.png 3x" class="logo left-half" />
       <ul class="nav-right">
-        <li><a href="">About</a></li>
-        <li><a href="">Features</a></li>
-        <li class="nav-border"><a href="">Download</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li class="nav-border"><a href="https://www.apple.com/ios/app-store/">Download</a></li>
       </ul>
     </nav>
     <div class="headline-container">
@@ -49,7 +50,7 @@
     <img src="img/artboardmockups.png" class="artboards-mockup" />
   </section>
 
-  <section class="engaged-mode-section">
+  <section class="engaged-mode-section" id="features">
     <div class="left-engaged">
       <img src="img/engagedmockup.png" class="mockup-screen-size" />
     </div>
@@ -77,7 +78,7 @@
       <img src="img/accountmockup.png" class="mockup-screen-size" />
     </div>
     <div class="right-account">
-      <h2 class="h2-color reveal-1">Host Settings</h2>
+      <h2 class="h2-color reveal-1 scroll">Host Settings</h2>
       <h4 class="h4-color reveal-2">MINIMAL SETTINGS FOR MAXIMUM FUN</h4>
       <p class="p-color reveal-3">We want you to focus on making sure your guests have the best time so we kept the settings to the absolute minimum. You can control how many songs your guests can add per hour, the proximity range, the ability to play explicit content and of course
         a crossfade option.</p>
@@ -86,7 +87,7 @@
 
   <footer>
     <div>
-      <img src="img/mainlogo.png" class="main-logo" />
+      <img src="img/mainlogo.png" class="main-logo" id="about" />
       <h1>For the people</h1>
       <p>
         We created this app when we got tired of seeing our friends bored at parties. Having to listen to someone else’s taste in music all night can be a real bummer. We want you to have complete control and to be able to do it in a way that gets everyone involved.
@@ -134,6 +135,17 @@
     });
     sr.reveal('.reveal-3', {
       duration: 2000
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+          scrollTop: $($(this).attr('href')).offset().top
+        }, 800, 'linear');
+      });
     });
   </script>
 </body>
