@@ -12,12 +12,12 @@ body {
 }
 
 header {
-  height: 525px;
+  height: 500px;
   background-image: url(../img/jukebox@2x.png);
   background-position: top right;
   background-repeat: no-repeat;
   background-color: #181E2F;
-  background-size: 80vw 350px;
+  background-size: contain;
   color: #FFF;
   margin: 0 auto;
 }
@@ -57,11 +57,12 @@ nav a:hover {
 
 #header-headline {
   font-family: 'neon_tubes_2regular';
-  font-size: 28px;
+  font-size: 2em;
   letter-spacing: 1px;
-  line-height: 36px;
+  line-height: 40px;
   margin-top: 10vw;
   margin-left: 30px;
+  margin-bottom: 10vw;
   font-weight: 100;
   width: 55vw;
   text-align: left;
@@ -81,44 +82,11 @@ nav a:hover {
   }
 }
 
-.headline-button {
-  display: flex;
-  margin-top: 30px;
-  margin-left: 30px;
-  border: 2px solid #EA4C89;
-  width: 175px;
-  padding: 10px;
-  color: #8E65E3;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px 0 rgba(234, 76, 137, 0.25);
+.app-store-icon {
+  height: 50px;
+  padding-left: 30px;
 }
 
-.pink-app-icon {
-  height: 25px;
-  padding-right: 10px;
-}
-
-.headline-button h2 {
-  font-size: .85em;
-}
-
-.headline-button h4 {
-  font-size: 1em;
-  margin-top: 2px;
-}
-
-.headline-button h4, h2 {
-  margin: 0;
-}
-
-.headline-button h2 a {
-  color: #8E65E3;
-  text-decoration: none;
-}
-
-.headline-button h2 a:hover {
-  color: #FFF;
-}
 
 .featured-icons-section {
   margin: 0 auto;
@@ -162,6 +130,9 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr;
   padding: 30px 0;
+  background-image: url(../img/topleftoval@3x.png);
+  background-size: 100vw;
+  background-repeat: no-repeat;
 }
 
 .h2-color {
@@ -198,8 +169,9 @@ nav a:hover {
   grid-template-columns: 1fr;
   background-color: #FFF;
   padding: 30px 0;
-  border-top: 1px solid #B4BCC4;
-  border-bottom: 1px solid #B4BCC4;
+  background-image: url(../img/middleoval@3x.png);
+  background-size: 100vw;
+  background-repeat: no-repeat;
 }
 
 .right-classic {
@@ -220,6 +192,9 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr;
   padding: 30px 0;
+  background-image: url(../img/bottomleftoval@3x.png);
+  background-size: 100vw 75vw;
+  background-repeat: no-repeat;
 }
 
 .left-account {
@@ -241,7 +216,7 @@ footer {
 
 footer h1 {
   font-size: 2em;
-  color: #FFF;
+  color: #8E65E3;
   text-align: center;
   padding-top: 20px;
 }
@@ -260,46 +235,11 @@ footer p {
   margin: auto;
 }
 
-.footer-button {
-  display: flex;
-  margin-top: 30px;
-  margin-left: 30px;
-  border: 2px solid #EA4C89;
-  width: 175px;
-  padding: 10px;
-  color: #8E65E3;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px 0 rgba(234, 76, 137, 0.25);
+.app-store-icon-footer {
+  height: 50px;
+  display: block;
   margin: 0 auto;
   margin-bottom: 50px;
-}
-
-.pink-app-icon {
-  height: 50px;
-  padding-right: 10px;
-}
-
-.footer-button h4, h2 {
-  margin: 0;
-  color: #8E65E3;
-}
-
-.footer-button h2 a {
-  color: #8E65E3;
-  text-decoration: none;
-}
-
-.footer-button h2 {
-  font-size: 1em;
-}
-
-.footer-button h2 a:hover {
-  color: #FFF;
-}
-
-.footer-button h4 {
-  margin-top: 2px;
-  font-size: .85em;
 }
 
 .actual-footer {
@@ -385,12 +325,13 @@ footer p {
   #header-headline {
     max-width: 960px;
     font-family: 'neon_tubes_2regular';
-    font-size: 50px;
+    font-size: 56px;
     letter-spacing: 1px;
-    line-height: 62px;
+    line-height: 68px;
     margin-top: 16vw;
+    margin-bottom: 2vw;
     font-weight: 100;
-    width: 30vw;
+    width: 40vw;
     text-align: left;
     animation: flicker 1.5s infinite alternate;
     color: #FFF;
@@ -405,28 +346,7 @@ footer p {
       box-shadow: none;
     }
   }
-  .headline-button {
-    display: flex;
-    margin-top: 50px;
-    width: 260px;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  .pink-app-icon {
-    height: 50px;
-    padding-right: 10px;
-    padding-top: 3px;
-  }
-  .headline-button h4, h2 {
-    margin: 0;
-  }
-  .headline-button h2 {
-    font-size: 1.75em;
-  }
-  .headline-button h4 {
-    margin-top: 2px;
-    font-size: 1.2em;
-  }
+
   .featured-icons-section {
     max-width: 800px;
     margin: 0 auto;
